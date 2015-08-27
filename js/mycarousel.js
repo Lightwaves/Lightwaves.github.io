@@ -12,7 +12,7 @@ $(document).ready(function () {
     click: function () {
         if (counter === quotes.length){        
             $.ajax( {
-      		url: 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
+      		url: 'http://jsonp.afeld.me/?url=http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
         	success: function ( data ) {
         		var post = data.shift();
         		quotes.push(post.content);

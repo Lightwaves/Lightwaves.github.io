@@ -12,13 +12,13 @@ $(document).ready(function () {
     click: function () {
         if (counter === quotes.length){        
             $.ajax( {
-      url: 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
-      success: function ( data ) {
-        var post = data.shift();
-        quotes.push(post.content);
-        counter++;  
-        $("#text-area").html(quotes[counter-1]);
-        //$("#text-area").append(counter-1);  
+      		url: 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
+        	success: function ( data ) {
+        		var post = data.shift();
+        		quotes.push(post.content);
+        		counter++;  
+        		$("#text-area").html(quotes[counter-1]);
+        		//$("#text-area").append(counter-1);  
 
       },
       cache: false

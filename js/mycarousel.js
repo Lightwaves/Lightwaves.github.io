@@ -3,7 +3,7 @@ $(document).ready(function () {
     var initial = "<p class=\"inital-text\">Inspiration can come from the most unlikely places,"+ 
     "to learn design, we must continually seek out new inspiration"+
     "so let this be a way to find some.</p>"+
-"<span class=\"inital-text\">Perform action to find some</span>";
+"<span class=\"inital-text\">Click right to find some</span>";
     quotes.push(initial);
     var counter = quotes.length;
     //$("body").css({"background-color": "black"}); #for testing with carousel.html, provides contrast.
